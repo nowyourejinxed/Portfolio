@@ -1,0 +1,112 @@
+
+.contact-page {
+    text-align: center;
+    padding: 40px;
+}
+
+.contact-page h1 {
+    font-size: 8em;
+    padding: 10px 20px;
+    margin: 0 40px;
+    background: black;
+    color: #ffffff;
+    border-radius: 30px;
+    box-shadow: 2px 2px 2px #000000,
+    10px 10px 12px #000000,
+    inset 2px 2px 10px #000000,
+    inset 2px 2px 10px #000000,
+    inset 2px 2px 10px #000000,
+    inset 2px 2px 10px #000000;
+    text-shadow: 0 0 10px #00e1ff,
+    0 0 50px #00e1ff,
+    0 0 10px #00e1ff,
+    0 0 30px #00e1ff;
+}
+
+.contact-page p {
+    font-size: 1.2rem;
+    margin-bottom: 40px;
+    filter: drop-shadow(0 0 5px rgb(255, 0, 227));
+}
+
+#mask {
+    filter: drop-shadow(0 0 20px rgb(0, 225, 255)) drop-shadow(0 0 10px rgb(0, 225, 255)) drop-shadow(0 0 10px rgb(0, 225, 255));
+}
+
+#glow {
+    font-size: 8em;
+    padding: 10px 20px;
+    margin: 0 40px;
+    background: black;
+    color: #ffffff;
+    border-radius: 30px;
+    box-shadow: 2px 2px 2px #000000,
+                10px 10px 12px #000000,
+                inset 2px 2px 10px #000000,
+                inset 2px 2px 10px #000000,
+                inset 2px 2px 10px #000000,
+                inset 2px 2px 10px #000000;
+    text-shadow: 0 0 50px #00e1ff,
+                0 0 100px #00e1ff,
+                0 0 150px #00e1ff,
+                0 0 200px #00e1ff;
+}
+
+.contact-links {
+    display: flex;
+    justify-content: center;
+    gap: 70px;
+    margin-top: 100px;
+}
+
+.contact-image {
+    width: 150px;
+    height: 150px;
+    transition: transform 0.3s ease;
+    z-index: 1; /* Keep the SVG in front */
+}
+
+.contact-image::before {
+    content: '';
+    position: absolute;
+    top: -10px;
+    left: -10px;
+    right: -10px;
+    bottom: -10px;
+    border-radius: 8px;
+    z-index: -1;
+    transition: box-shadow 0.3s ease;
+}
+
+
+.contact-image:hover {
+    transform: scale(1.05);
+}
+
+
+.contact-image svg {
+    width: 100%;
+    height: 100%;
+    display: block;
+    transition: filter 0.3s ease;
+}
+
+.contact-image svg path {
+    transition: stroke 0.3s ease, filter 0.3s ease;
+}
+
+.contact-image:hover svg path {
+    stroke: cyan; /* Change stroke color on hover */
+    filter: drop-shadow(0 0 15px rgba(0, 255, 255, 0.7));
+}
+
+@media (max-width: 768px) {
+    .contact-links {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .contact-image {
+        margin-bottom: 20px;
+    }
+}
