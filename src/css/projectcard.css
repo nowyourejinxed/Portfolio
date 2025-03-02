@@ -58,14 +58,6 @@
     }
 }
 
-{/* Do I want annimation?
-animation: animate 4s linear infinite;
-@keyframes animate {
-    to {
-        --a: 1turn;
-    }
-}*/}
-
 .project-card h3 {
     font-size: 1.8rem;
     margin-bottom: 10px;
