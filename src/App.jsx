@@ -1,9 +1,9 @@
 import './App.css'
 import {BrowserRouter, Navigate, Route, Routes} from "react-router-dom";
-import Home from "./pages/home.jsx";
-import About from "./pages/about/about.jsx";
-import Projects from "./pages/projects/projects.jsx";
-import Contact from "./pages/contact/contact.jsx";
+import Home from "./pages/page.jsx";
+import About from "./pages/about/page.jsx";
+import Projects from "./pages/projects/page.jsx";
+import Contact from "./pages/contact/page.jsx";
 
 
 
