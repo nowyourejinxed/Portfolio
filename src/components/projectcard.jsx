@@ -4,16 +4,16 @@ import '../css/projectcard.css'
 
 export function ProjectCard({ project }){
     return (
-        <div className="project-card">
-            <h3>{project.name}</h3>
+        <div className="project-card p-2 text-center">
+            <h3 className={"h1  text-n-4 px-7"}>{project.name}</h3>
             <ImageCarousel
                 images={project.images}
             />
-            <p>{project.description}</p>
+            <p className={"h7 pb-5 px-15"}>{project.description}</p>
 
             <div>
-                <strong>Tech Stack</strong>
-                <div className="tech-stack">
+                <strong className={"text-n-4 pb-1"}>Tech Stack</strong>
+                <div className="tech-stack pt-3 pb-3 px-7">
                     {project.tech.map((techItem, index) => (
                         <a key={index} href={`#${techItem}`} className="tech-tag">
                             {techItem}
@@ -22,7 +22,7 @@ export function ProjectCard({ project }){
                 </div>
             </div>
 
-            <div className="project-links">
+            <div className="text-center text-n-4 h6 pb-15">
                 <a href={project.link} target="_blank" rel="noopener noreferrer">
                     View on GitHub
                 </a>
