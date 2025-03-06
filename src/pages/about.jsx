@@ -1,4 +1,4 @@
-import NavBar from "../components/NavBar.jsx";
+import Navbar from "../components/NavBar.jsx";
 import '../css/about.css';
 import Section from "../components/Section.jsx";
 import Footer from "../components/Footer.jsx";
@@ -10,7 +10,7 @@ export default function About(){
     return(
         <>
            <div className={"pt-[5.75rem] lg:pt-[3.25rem] overflow-hidden"}>
-            <NavBar/>
+            <Navbar/>
                <Section>
                    {/*Break apart into dif sections*/}
                    <div className="container relative">

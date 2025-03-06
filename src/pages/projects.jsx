@@ -1,4 +1,4 @@
-import NavBar from "../components/NavBar.jsx";
+import Navbar from "../components/NavBar.jsx";
 import '../css/projectcard.css'
 import {projects} from "../constants/index.jsx";
 import {useState} from "react";
@@ -17,7 +17,7 @@ export default function Projects(){
     return(
         <>
             <div className={"pt-[3.75rem] lg:pt-[5.25rem] overflow-hidden"}>
-            <NavBar/>
+            <Navbar/>
                 <Section>
                     <div className="container relative">
                         <div

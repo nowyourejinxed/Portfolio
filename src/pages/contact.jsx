@@ -1,4 +1,4 @@
-import NavBar from "../components/NavBar.jsx";
+import Navbar from "../components/NavBar.jsx";
 import '../css/contact.css'
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 import {faGithub} from "@fortawesome/free-brands-svg-icons";
@@ -9,7 +9,7 @@ export default function Contact(){
     return(
         <>
             <div className={"pt-[6.75rem] lg:pt-[8.25rem] overflow-hidden"}>
-            <NavBar/>
+            <Navbar/>
                 <Section>
                     <div className="container relative">
                         <div
