@@ -2,7 +2,7 @@ import ImageCarousel from "./imageDisplay.jsx";
 import '../css/projectcard.css'
 
 
-export function ProjectCard({ project }){
+export function Projectcard({ project }){
     return (
         <div className="project-card p-2 text-center">
             <h3 className={"h2 text-n-4 px-15 pt-15 font-PressStart2P"}>{project.name}</h3>
