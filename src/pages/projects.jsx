@@ -5,7 +5,7 @@ import {useState} from "react";
 import Button from "../components/Button.jsx";
 import Section from "../components/Section.jsx";
 import Footer from "../components/Footer.jsx";
-import ProjectCard from "../components/projectCard.jsx";
+import ProjectCard from "../components/projectcard.jsx";
 
 
 
