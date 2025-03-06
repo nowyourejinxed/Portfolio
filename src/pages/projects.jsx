@@ -1,10 +1,11 @@
-import {ProjectCard} from "../components/projectcard.jsx";
-import Navbar from "../components/navbar.jsx";
+import {ProjectCard} from "../components/ProjectCard.jsx";
+import NavBar from "../components/NavBar.jsx";
 import '../css/projectcard.css'
 import {projects} from "../constants/index.jsx";
 import {useState} from "react";
 import Button from "../components/Button.jsx";
 import Section from "../components/Section.jsx";
+import Footer from "../components/Footer.jsx";
 
 
 
@@ -16,32 +17,31 @@ export default function Projects(){
     return(
         <>
             <div className={"pt-[3.75rem] lg:pt-[5.25rem] overflow-hidden"}>
-            <Navbar/>
+            <NavBar/>
                 <Section>
                     <div className="container relative">
                         <div
                             className="relative z-1 max-w-[62rem] mx-auto text-center mb-[3.875rem] md:mb-20 lg:mb-[6.25rem]">
-                        <section className="py-12 px-6">
-                            <h1 className=" h1 font-bold text-center">Projects that Blend Creativity, Code, and Curiosity</h1>
+                        <section className="pt-12 px-6">
+                            <h1 className=" h1 font-bold text-center font-code">Projects that Blend Creativity, Code, and Curiosity</h1>
 
-                {/* Filter Buttons */}
-                <div className="text-right mt-12 mb-0">
-                    <Button onClick={() => setFilter('all')}>All</Button>
-                    <Button onClick={() => setFilter('web')}>Web</Button>
-                    <Button onClick={() => setFilter('games')}>Games</Button>
-                </div>
-            </section>
-            <section className="projects-section">
-                <div className="">
-                    {filteredProjects.map((project, index) => (
-                        <ProjectCard key={index} project={project}/>
-                    ))}
-                </div>
-            </section>
-            </div>
+                            {/* Filter Buttons */}
+                            <div className="text center lg:text-right mt-12 mb-0">
+                                <Button onClick={() => setFilter('all')}>All</Button>
+                                <Button onClick={() => setFilter('web')}>Web</Button>
+                                <Button onClick={() => setFilter('games')}>Games</Button>
+                            </div>
+                        </section>
+                        <div className="grid gap-15">
+                            {filteredProjects.map((project, index) => (
+                                <ProjectCard key={index} project={project}/>
+                            ))}
+                        </div>
+                        </div>
 
-                </div>
+                    </div>
                 </Section>
+                <Footer/>
             </div>
         </>
     );

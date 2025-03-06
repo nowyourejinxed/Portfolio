@@ -5,7 +5,7 @@ import MenuSvg from "../assets/MenuSVG.jsx";
 import Button from "./Button.jsx";
 import {disablePageScroll, enablePageScroll} from "scroll-lock/dist/scroll-lock.js";
 
-export default function Navbar(){
+export default function NavBar(){
     const pathname = useLocation();
     const [openNavigation, setOpenNavigation] = useState(false);
 
