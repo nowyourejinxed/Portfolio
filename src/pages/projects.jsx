@@ -1,4 +1,3 @@
-import {ProjectCard} from "../components/ProjectCard.jsx";
 import NavBar from "../components/NavBar.jsx";
 import '../css/projectcard.css'
 import {projects} from "../constants/index.jsx";
@@ -6,6 +5,7 @@ import {useState} from "react";
 import Button from "../components/Button.jsx";
 import Section from "../components/Section.jsx";
 import Footer from "../components/Footer.jsx";
+import {ProjectCard} from "../components/ProjectCard.jsx";
 
 
 
