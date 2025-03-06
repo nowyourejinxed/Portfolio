@@ -5,7 +5,8 @@ import {useState} from "react";
 import Button from "../components/Button.jsx";
 import Section from "../components/Section.jsx";
 import Footer from "../components/Footer.jsx";
-import {Projectcard} from "../components/ProjectCard.jsx";
+import {ProjectCard} from "../components/ProjectCard.jsx";
+
 
 
 
@@ -34,7 +35,7 @@ export default function Projects(){
                         </section>
                         <div className="grid gap-15">
                             {filteredProjects.map((project, index) => (
-                                <Projectcard key={index} project={project}/>
+                                <ProjectCard key={index} project={project}/>
                             ))}
                         </div>
                         </div>
