@@ -5,7 +5,7 @@ export default function Hero(){
     return(
         <>
             <Section
-                className="pt-[15rem] lg:pt-[22rem] pb-[10rem] -mt-[5.25rem]"
+                className="pt-[15rem] lg:pt-[17rem] pb-[10rem] -mt-[5.25rem]"
                 crosses
                 customPaddings
                 id="hero"
