@@ -39,7 +39,7 @@ export const projects = {
             name: 'Game Recommendation System',
             description: 'Developed a proof-of-concept game recommendation engine that allows users to search for games by features,' +
                 ' vendors, themes, or similar titles, generating tailored recommendations to enhance user engagement.',
-            tech: ['Typescript', 'Google Apps Script', 'Git', 'GitHub', 'Vercel', 'Next.js'],
+            tech: ['React', 'Google Apps Script', 'Git', 'GitHub', 'Vercel', 'Next.js'],
             link: '',
             liveDemo: 'https://react-gre-next.vercel.app',
             images: []
