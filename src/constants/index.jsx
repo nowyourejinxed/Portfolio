@@ -41,7 +41,7 @@ export const projects = {
                 ' vendors, themes, or similar titles, generating tailored recommendations to enhance user engagement.',
             tech: ['Typescript', 'Google Apps Script', 'Git', 'GitHub', 'Vercel', 'Next.js'],
             link: '',
-            liveDemo: '',
+            liveDemo: 'https://react-gre-next.vercel.app',
             images: []
         },
         {
